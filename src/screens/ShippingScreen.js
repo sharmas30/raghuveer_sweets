@@ -11,18 +11,12 @@ const ShippingScreen = {
                     phone_number: document.getElementById('phone_number').value,
                     address: document.getElementById('address').value,
                     city: document.getElementById('city').value,
-                    postalCode: document.getElementById('postalCode').value,
-                    country: document.getElementById('country').value,
                 });
                 document.location.hash = '/payment';
             });
     },
     render: () => {
         const { address, city, postalCode, country, name, phone_number } = getShipping();
-        // const { email } = getUserInfo();
-        // if (!email) {
-        //     document.location.hash = '/';
-        // }
         if (getCartItems().length === 0) {
             document.location.hash = '/';
         }
@@ -46,20 +40,13 @@ const ShippingScreen = {
                     </li>
                     <li>
                         <label for="address">Adress</label>
-                        <input type="address"  name="address" id="address" value="${address}" placeholder="Complete Address" required="required" />
+                        <input type="address"  name="address" id="address" value="${address}" placeholder="Complete Address"  />
                     </li>
                     <li>
                         <label for="city">City</label>
-                        <input type="text" name="city" id="city" value="${city}" placeholder="City Name" required="required" />
+                        <input type="text" name="city" id="city" value="${city}" placeholder="City Name"  />
                     </li>
-                    <li>
-                        <label for="postalCode">Postal Code</label>
-                        <input type="text" name="postalCode" id="postalCode" value="${postalCode}" placeholder="xxx xxx" required="required" />
-                    </li>
-                    <li>
-                        <label for="country">Country</label>
-                        <input type="text" name="country" id="country" value="${country}" placeholder="india" />
-                    </li>
+                    
                     <li>
                         <button type="submit" class="primary">Continue <i class="fa fa-arrow-right" style="font-size:14px;margin-left:8px"></i></button>
                     </li>

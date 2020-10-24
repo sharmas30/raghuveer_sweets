@@ -11,7 +11,7 @@ const Header = {
                 <a href="#"><i class="fa fa-home" aria-hidden="true"></i> <span></span> Home</a>
                 <a href="/#/contact"><i class="fa fa-envelope" aria-hidden="true"></i> <span></span> Contact Us</a>
 
-                ${isAdmin ? `<a href="/#/dashboard"> <i class='fas fa-tv' style='font-size:20px;color:rgb(137, 48, 172)'></i> Dashboard</a>`:'<a></a>'} 
+                ${isAdmin ? `<a href="/#/dashboard"> <i class='fas fa-tv' style='font-size:20px;color:#d70e3e'></i> Dashboard</a>`:'<a></a>'} 
 
 			</div>
         	`

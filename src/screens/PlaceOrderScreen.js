@@ -84,8 +84,7 @@ const PlaceOrderScreen = {
                     <h2>Shipping</h2>
                     <div>
                     <h4>
-                        ${shipping.address}, ${shipping.city}, ${shipping.postalCode},
-                        ${shipping.country}
+                        ${shipping.address}, ${shipping.city}
                         </h4>
                     </div>
                 </div>

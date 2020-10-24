@@ -95,23 +95,22 @@ const SigninScreen = {
                         <label for="password">password</label>
                         <input type="password" name="password" id="password"  required="required" />
                     </li>
-                    
                     <li>
                         <button type="submit" class="primary">Signin </button>
                     </li>
                     <div id="forget_password" class="forget-pass"> 
                         <a> Forget Password </a>
                     </div>
-                    <div class="new-user">
-                        New User ?
-                        <a href="/#/register">Create Your Account </a>
-                    </div>
                 </ul>
             </form>
         </div>
-        
         `;
     }
-
 }
 export default SigninScreen;
+
+
+// <div class="new-user">
+//                         New User ?
+//                         <a href="/#/register">Create Your Account </a>
+//                     </div>

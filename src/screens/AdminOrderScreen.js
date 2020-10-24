@@ -22,9 +22,7 @@ const AdminOrderScreen = {
         after_render: () => {
             const detailButtons = document.getElementsByClassName('order-details');
             Array.from(detailButtons).forEach((detailButton) => {
-                console.log("nnnnnnnn");
                 detailButton.addEventListener('click', () => {
-                    console.log("oooooooooo");
                     document.location.hash = `/orderdetail/${detailButton.id}`;
                 });
             });
@@ -35,13 +33,11 @@ const AdminOrderScreen = {
                     if (confirm('Are you sure to delete this product?')) {
                         firebase.database().ref("Orders/" + order_delete.id).remove();
                     }
-
                 });
             });
 
         },
         render: (allOrder) => {
-                console.log('ADM ORDERS', allOrder);
                 if (!getUserInfo().isAdmin) {
                     document.location.hash = '/';
                 }
@@ -56,16 +52,16 @@ const AdminOrderScreen = {
             ${
                 allOrder.length === 0
                 ? `<tr><td colspan="6">No Order Found.</tr>`
-                : allOrder.map((order,index) =>`
+                : allOrder.reverse().map((order,index) =>`
                 <div>
                 <ul>
                     <li>
-                        <h5> Order No. ${index + 1} 
+                        <h5> Order No. ${(allOrder.length) - index} 
                         <a href="/#/orderlist"><i class="fa fa-remove hide" id="${order.order_id}" style="font-size:20px;color:rgb(219, 52, 80);"></i></a>
                         </h5>
                     </li>
                     <li>
-                        <span> Customer Name :</span> ${order.userName}                     
+                        <span> Customer Name :</span> ${order.shipping.name}                     
                     </li> 
                     <li>
                     <span> Order Date :</span> ${order.orderDate}
@@ -74,9 +70,8 @@ const AdminOrderScreen = {
                         <button class="order-details" id="${order.order_id}">Order Details</button>         
                     </li>
                 </ul>
-                </div>
-                    
-                    `).join('\n')}
+                </div>                   
+                `).join('\n')}
             </div>
         </div>
         `
@@ -85,19 +80,4 @@ const AdminOrderScreen = {
 export default AdminOrderScreen;
 
 
-// <div>
-//                     <div class="order-div-1 ">
-//                         <img src="./images/sw5.jpg" alt="">
-//                         <ul>
-//                             <li>
-//                                 Name: Kaju Katli
-//                             </li>
-//                             <li>
-//                                 Price: Rs 74
-//                             </li>
-//                             <li>
-//                                 Address: Laxmi Nagar Chandmari, Khamgaon
-//                             </li>
-//                         </ul>
-//                     </div>
-//                 </div>
+// ${order.isDelivered ? `<a href="/#/orderlist"><i class="fa fa-remove hide" id="${order.order_id}" style="font-size:20px;color:rgb(219, 52, 80);"></i></a>` :''}

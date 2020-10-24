@@ -49,49 +49,49 @@ const ContactScreen = {
             <div class="footer">
             <div class="col-lg-4 col-md-4 col-12 ">
                 <div class="text-center footer-bg">
-                <i class="fa fa-map-marker-alt" style="font-size:30px;color:rgb(137, 48, 172)"></i><br>
+                <i class="fa fa-map-marker-alt" style="font-size:30px;color:#d70e3e"></i><br>
                     <div class="footer-div">
                         <p>Address</p>
                         <p>Laxmi Nagar, Chandmari</p>
                         <span>Khamgaon, 444 303 </span>
                     </div>
-                    <hr class="visible-xs" style="border: 1px solid rgb(137, 48, 172); width: 180px;">
+                    <hr class="visible-xs" style="border: 1px solid #d70e3e; width: 180px;">
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-4 col-12 ">
                 <div class="text-center footer-bg">
-                    <i class="fa fa-envelope footer-icon" style="font-size:30px;color:rgb(137, 48, 172);font-weight:250"></i><br>
+                    <i class="fa fa-envelope footer-icon" style="font-size:30px;color:#d70e3e;font-weight:250"></i><br>
                     <div class="footer-div">
                         <p class="contact-txt">General Enquiries</p>
                         <span>shubhsharmass24@gmail.com</span>
                     </div>
-                    <hr class="visible-xs text-center" style="border: 1px solid rgb(137, 48, 172); width: 180px;">
+                    <hr class="visible-xs text-center" style="border: 1px solid #d70e3e; width: 180px;">
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-4 col-12">
                 <div class="text-center footer-bg">
-                    <i class="fa fa-phone" style="font-size:30px;color:rgb(137, 48, 172)"></i><br>
+                    <i class="fa fa-phone" style="font-size:30px;color:#d70e3e"></i><br>
                     <div class="footer-div">
                         <p>Call Us</p>
                         <p>+91-8983222814</p>
                         <span>+91-8983222814</span><br>
                     </div>
-                    <hr class="visible-xs" style="border: 1px solid rgb(137, 48, 172); width: 180px;">
+                    <hr class="visible-xs" style="border: 1px solid #d70e3e; width: 180px;">
                 </div>
             </div>
 
             <div class="col-lg-12 col-md-12 col-12">
                 <div class="text-center footer-bg">
-                    <i class="fa fa-clock-o" style="font-size:30px;color:rgb(137, 48, 172)"></i><br>
+                    <i class="fa fa-clock-o" style="font-size:30px;color:#d70e3e"></i><br>
                     <div class="footer-div">
                         <p>Hours : </p>
                         <p> Mon-Fri : 11.00am - 7.00pm</p>
                         <p> Sat : 11.00am - 2.00pm</p>
                         <span>Sunday Closed</span>
                     </div>
-                    <hr class="visible-xs" style="border: 1px solid rgb(137, 48, 172); width: 180px;">
+                    <hr class="visible-xs" style="border: 1px solid #d70e3e; width: 180px;">
                 </div>
             </div>
         </div><br>

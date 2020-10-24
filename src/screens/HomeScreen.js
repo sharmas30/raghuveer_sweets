@@ -29,12 +29,14 @@ const HomeScreen = {
                             </div>
                         </div>
                     </div>
+                    <a href="/#/product/${product._id}">
+                        <li class="product-btn">
+                            <button id="add-button">View Product <i class="fa fa-shopping-cart"
+                            style="font-size:22px;color:white; padding: 0px 0px 0px 15px;"></i></button>
+                        </li>
+                    </a>
                 </div>
-
-                <div class="card-footer">
-                    <a href="/#/product/${product._id}">Add To Cart <i class="fa fa-shopping-cart"
-                    style="font-size:22px;color:white; padding: 0px 00px 0px 15px;"></i></a>
-                </div>
+                
             </div>
         
         `   
@@ -45,3 +47,9 @@ const HomeScreen = {
 }
 
 export default HomeScreen;
+
+
+// <div class="card-footer">
+//                     <a href="/#/product/${product._id}">Add To Cart <i class="fa fa-shopping-cart"
+//                     style="font-size:22px;color:white; padding: 0px 00px 0px 15px;"></i></a>
+//                 </div>

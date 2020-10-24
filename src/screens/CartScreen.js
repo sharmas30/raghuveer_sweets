@@ -125,8 +125,13 @@ const CartScreen = {
                     Rs ${cartItems.reduce((a, c) => a + c.price * c.qty, 0)}
                     </li>
                     <li class="product-btn" id="checkout-button">
-                        <button>Proceed to Checkout</button>
+                        <button>Proceed to Checkout <i class="fa fa-arrow-right" style="font-size:14px;margin-left:8px"></i></button>
                     </li>
+                    <a href="/#/">
+                    <li class="product-btn" id="checkout-button">
+                        <button><i class="fa fa-arrow-left" style="font-size:14px;margin-right:8px"></i> Go More Shopping</button>
+                    </li>
+                    </a>
                 </ul>
             </div>
     `;

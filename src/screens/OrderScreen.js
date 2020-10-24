@@ -1,31 +1,29 @@
 import { getUserInfo } from "../localStorage.js";
-import { rerender } from "../utils.js";
 
 var order_id, itemsPrice, orderItems, payment, shippingPrice, shipping, taxPrice, totalPrice;
 
-
 const OrderScreen = {
         after_render: () => {
-            // var deliverButton = document.getElementsByClassName('deliver')[0];
-            // console.log('deliverButton', deliverButton)
-            // deliverButton.addEventListener('click', (e) => {
-            //     e.preventDefault();
-            //     var orderID = deliverButton.id
-            //     var d = new Date();
-            //     var product_date_1 = d.toLocaleString();
-            //     var n = d.toISOString();
-            //     firebase.database()
-            //         .ref("Orders/" + orderID)
-            //         .update({
-            //             deliveredAt: product_date_1,
-            //             isDelivered: true,
-            //         });
-            //     document.location.hash = `/order/${deliverButton.id}`;
-            // });
+            var deliverButton = document.getElementsByClassName('deliver')[0];
+            console.log('deliverButton', deliverButton)
+            deliverButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                var orderID = deliverButton.id
+                var d = new Date();
+                var product_date_1 = d.toLocaleString();
+                var n = d.toISOString();
+                firebase.database()
+                    .ref("Orders/" + orderID)
+                    .update({
+                        deliveredAt: product_date_1,
+                        isDelivered: true,
+                    });
+                document.location.hash = `/order/${deliverButton.id}`;
+            });
 
         },
         render: (allData) => {
-                //const { isAdmin } = getUserInfo();
+                const { isAdmin } = getUserInfo();
                 const {
                     order_id,
                     userName,
@@ -147,7 +145,11 @@ const OrderScreen = {
                     </tr>
                 </table>
                 <div class="place-order-btn">
-                
+                ${
+                    isAdmin && !isDelivered
+                    ? `<button id="${order_id}" class="primary fw deliver">Deliver Order</button>`
+                    : `<p id="deliver-order-button"></p>`
+                }
                 </div>
             </div>
         </div>
@@ -156,9 +158,3 @@ const OrderScreen = {
 }
 
 export default OrderScreen;
-
-// ${
-//     isAdmin 
-//     ? `<button id="${order_id}" class="primary fw deliver">Deliver Order</button>`
-//     : `<p id="deliver-order-button"></p>`
-// }

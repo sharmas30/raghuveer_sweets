@@ -66,7 +66,8 @@ const ProductScreen = {
                     status : In Stock
                 </li>
                 <li class="product-btn">
-                    <button id="add-button">Add To Cart</button>
+                    <button id="add-button">Add To Cart <i class="fa fa-shopping-bag"
+                    style="font-size:22px;color:white; padding: 0px 00px 0px 15px;"></i></button>
                 </li>
                 
             </ul>
