@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>SharmasStore</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <div class="tophead">
+                <div class="brandlogo">
+                    <a href="/#/">SharmasStore </a>
+                </div>
+                <div>
+                    <a href="/#/cart"><i class="fa fa-shopping-cart"
+                            style="font-size:22px;color:white; padding: 0px 20px 0px 15px;"></i></a>
+
+                    <span class="menulines" onclick="openNav()">&#9776;</span>
+                </div>
+            </div>
+        </header>
+        <div class="sidenav" id="mySidenav">
+        </div>
+        <main>
+            <section id="loading-overlay">
+                <div class="loader">
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                    <span style="--i:4;"></span>
+                    <span style="--i:5;"></span>
+                    <span style="--i:6;"></span>
+                    <span style="--i:7;"></span>
+                    <span style="--i:8;"></span>
+                    <span style="--i:9;"></span>
+                    <span style="--i:10;"></span>
+                    <span style="--i:11;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:13;"></span>
+                    <span style="--i:14;"></span>
+                    <span style="--i:15;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:18;"></span>
+                    <span style="--i:19;"></span>
+                    <span style="--i:20;"></span>
+                </div>
+            </section>
+
+            <section class="all-products">
+                <div class="container">
+                    <div class="row" id="main-container">
+
+                        <!-- <section id="loading-overlay">
+                            <div class="loader">
+                                <span style="--i:1;"></span>
+                                <span style="--i:2;"></span>
+                                <span style="--i:3;"></span>
+                                <span style="--i:4;"></span>
+                                <span style="--i:5;"></span>
+                                <span style="--i:6;"></span>
+                                <span style="--i:7;"></span>
+                                <span style="--i:8;"></span>
+                                <span style="--i:9;"></span>
+                                <span style="--i:10;"></span>
+                                <span style="--i:11;"></span>
+                                <span style="--i:12;"></span>
+                                <span style="--i:13;"></span>
+                                <span style="--i:14;"></span>
+                                <span style="--i:15;"></span>
+                                <span style="--i:16;"></span>
+                                <span style="--i:17;"></span>
+                                <span style="--i:18;"></span>
+                                <span style="--i:19;"></span>
+                                <span style="--i:20;"></span>
+                            </div>
+                        </section> -->
+
+
+                        <!-- <div class="col-lg-3 col-12 main-card">
+                            <div class="card text-center">
+                                <div class="card-body product">
+                                    <a href="/#/product/1">
+                                        <img src="images/sw2.jpg" alt="product 1" />
+                                    </a>
+                                    <div class="card-details">
+                                        <div class="product-name">
+                                            <a href="/#/product/1">
+                                                Sweet SonPapdi
+                                            </a>
+                                        </div>
+                                        <div class="product-brand">
+                                            Welcome Sweets
+                                        </div>
+                                        <div class="product-price">
+                                            Rs 80 /kg
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#"><i class="fa fa-shopping-cart"
+                                        style="font-size:22px;color:white; padding: 0px 30px 0px 0px;"></i>Add To
+                                    Cart</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <p> All rights reserved @2020</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!------------- FIREBASE LIBRARIES -------------->
+
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-storage.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase.js"></script>
+
+    <script>
+        var navFlag = 0;
+        const openNav = () => {
+            //document.getElementById('mySidenav').style.width = "250px";
+            if (navFlag === 0) {
+                document.getElementById('mySidenav').style.width = "250px";
+                navFlag = 1;
+            } else if (navFlag === 1) {
+                document.getElementById('mySidenav').style.width = "0";
+                navFlag = 0;
+            }
+        }
+        const closeNav = () => {
+            document.getElementById('mySidenav').style.width = "0";
+            navFlag = 0;
+        }
+    </script>
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
